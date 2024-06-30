@@ -65,7 +65,9 @@ La table stocke des informations agrégées sur des fenêtres d'1 minute (_1m) e
 - `diff` : l'écart maximal entre la plus petite et la plus grande valeur de clôture sur la fenêtre temporelle.
 - `rate` : le rendement maximal théorique possible sur la fenêtre temporelle.
 
-La formule du rendement maximal théorique est la suivante : Rate = High - Low / Low
+La formule du rendement maximal théorique est la suivante : 
+
+Rate = High - Low / Low
 Ainsi, `low_5m` permet de connaître la valeur minimale atteinte sur les 5 dernière minutes.
 
 

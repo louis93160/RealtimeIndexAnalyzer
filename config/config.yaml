@@ -1,0 +1,9 @@
+kafka:
+  bootstrap_servers: 'localhost:9092'
+  topic: 'stock-data'
+
+postgres:
+  dbname: 'stocks'
+  user: 'postgres'
+  password: 'password'
+  host: 'localhost'

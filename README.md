@@ -27,6 +27,7 @@ Le cluster Kafka est déjà en place, et celui-ci contient un topic stock-data o
   "Symbol": "ZYXI",
   "Volume": 1337.0
 }
+```
 
 - `Close` correspond à la valeur de fermeture brute (celle qui sera utilisée par défaut).
 - `Adj Close` correspond à la valeur de fermeture en ayant pris en compte ajusté selon les arbitrages opérés sur cet indice (dividendes et stock-options).
@@ -58,6 +59,7 @@ CREATE TABLE IF NOT EXISTS public.tickers
     rate_5m double precision,
     CONSTRAINT tickers_pkey PRIMARY KEY (symbol)
 )
+```
 
 La table stocke des informations agrégées sur des fenêtres d'1 minute (_1m) et de 5 minutes (_5m). Les informations agrégées demandées sont les suivantes :
 

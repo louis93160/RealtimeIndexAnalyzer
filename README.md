@@ -13,7 +13,7 @@
 </p>
 
 
-##Description du projet
+## Description du projet
 
 Pour ses équipes opérant sur les marchés financiers, une société d'investissement a besoin de proposer une base de données qui stocke des informations financières sur les indices boursiers des sociétés cotées au NASDAQ. En particulier, elle souhaite pouvoir proposer à ces équipes des calculs agrégés sur les indices du NASDAQ, et en utilisant des fenêtres temporelles. En tant que Data Engineer, elle vous demande de construire un job d'agrégation de données à partir des valeurs stockées en temps réel sur un cluster Kafka. Le job doit pouvoir être exécuté en continu sur un serveur et doit être en mesure d'alimenter une base PostgreSQL où les valeurs seront mises à jour en temps réel.
 
@@ -33,11 +33,11 @@ Le cluster Kafka est déjà en place, et celui-ci contient un topic stock-data o
 - `Symbol` correspond au symbole du tracker.
 - `Volume` correspond au volume d'échange réalisé sur ce tracker.
 
-##Contraintes
+## Contraintes
 
 L'entreprise n'oblige aucun framework à utiliser pour effectuer les calculs. Néanmoins, il est conseillé d'utiliser Kafka Streams, Spark Structure Streaming ou Apache Flink pour faciliter les calculs d'agrégations et les intégrations avec PostgreSQL.
 
-##Tables SQL
+## Tables SQL
 
 La compagnie demande à ce que le format en sortie du job respecte le schéma utilisé dans la table PostgreSQL. Pour cela, elle fournit le code SQL de création de la table tickers dans la base de données stocks.
 

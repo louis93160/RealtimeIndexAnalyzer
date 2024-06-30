@@ -19,6 +19,7 @@ Pour ses équipes opérant sur les marchés financiers, une société d'investis
 
 Le cluster Kafka est déjà en place, et celui-ci contient un topic stock-data où, à chaque seconde, l'information de clôture d'un symbole (ou tracker) est envoyé dessus par un programme tiers. Les données stockées sur ce topic sont disponibles au format JSON et selon le schéma suivant :
 
+```json
 {
   "Adj Close": 8.399900436401367,
   "Close": 8.399900436401367,
@@ -41,6 +42,7 @@ L'entreprise n'oblige aucun framework à utiliser pour effectuer les calculs. N�
 
 La compagnie demande à ce que le format en sortie du job respecte le schéma utilisé dans la table PostgreSQL. Pour cela, elle fournit le code SQL de création de la table tickers dans la base de données stocks.
 
+```sql
 CREATE TABLE IF NOT EXISTS public.tickers
 (
     symbol text NOT NULL,

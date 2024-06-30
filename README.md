@@ -1,6 +1,6 @@
 <h2 align="center" style="font-size: 20px;">Analyse en temps réel des données d'indices boursiers</h2>
 
-<div align="center" style="font-size: 22px;">Pojet Data Engineering - Louis Duvieux</div>
+<div align="center" style="font-size: 22px;">Projet Data Engineering - Louis Duvieux</div>
 
 <br><br>
 
